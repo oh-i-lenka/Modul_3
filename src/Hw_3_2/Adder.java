@@ -11,7 +11,8 @@ public class Adder extends Arithmetic {
     }
 
     public static void main(String[] args) {
-        check(10,5);
+        System.out.println(check(10,5));
         System.out.println(check(0,5));
+        System.out.println(add(345,1000));
     }
 }
