@@ -14,8 +14,8 @@ public class User {
     }
 
     void paySalary(){
-        int totalBal = getBalance()+ getSalary();
-        System.out.println("Your current balance is " + totalBal + " " + getCurrency());
+        setBalance(getBalance()+ getSalary());
+        System.out.println("Your current balance is " + getBalance() + " " + getCurrency());
     }
 
     void withdraw(int summ){
@@ -26,7 +26,8 @@ public class User {
             newBal = getBalance()- (summ * 1.1);
         }
         if (newBal >= 0) {
-            System.out.println("The operation successfully completed. The new balance is " + newBal);
+            setBalance((int) newBal);
+            System.out.println("The operation has successfully completed. The new balance is " + newBal);
         } else {
             System.out.println("Not enough money to complete the operation");
         }
