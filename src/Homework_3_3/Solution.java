@@ -26,7 +26,7 @@ public class Solution {
         return coursesTaken;
     }
 
-    static void Students(){
+    static void createStudents(){
 
         Student Petrov = new Student("Petr", "Petrov", 225);
         Student Ivanov = new Student("Ivanov", courses());
